@@ -5,7 +5,7 @@ pipeline {
     stage('first') {
       steps {
         echo 'hello from github'
-        ls -al
+        sh 'ls -al'
       }
     }
     staget('echo code'){
