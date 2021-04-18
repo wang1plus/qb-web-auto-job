@@ -1,0 +1,5 @@
+AUTO_DELETE_BEFORE_DAYS = 30
+
+AUTO_MOVE_BEFORE_DAYS = 5
+
+AUTO_MOVE_PATH = '/ext_disk_1/medias/'
