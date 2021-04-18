@@ -6,12 +6,18 @@ pipeline {
       steps {
         echo 'hello from github'
         sh 'pwd'
-        sh 'ls -al'
+        echo pwd()
       }
     }
     stage('echo code'){
       steps {
-        cat src/main.py
+        main_py_path = '${env.WORKSPACE}/src/main.py'
+
+        if(fileExists(main_py_path) == true){
+          echo main_py_path
+          sh 'ls -al ${main_py_path}'
+          cat main_py_path
+        }
       }
     }
   }
