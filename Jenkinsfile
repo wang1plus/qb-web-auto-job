@@ -1,9 +1,10 @@
+#!/usr/bin/env groovy
 pipeline {
   agent any
   stages{
     stage('first') {
       steps {
-        eco 'hello from github'
+        echo 'hello from github'
       }
     }
   }
