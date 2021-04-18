@@ -8,7 +8,7 @@ pipeline {
         sh 'ls -al'
       }
     }
-    staget('echo code'){
+    stage('echo code'){
       steps {
         cat src/main.py
       }
