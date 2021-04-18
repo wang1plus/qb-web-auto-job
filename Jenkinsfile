@@ -16,6 +16,7 @@ pipeline {
           echo main_py_path
           if(fileExists(main_py_path) == true){
             sh "ls -al ${main_py_path}"
+            sh "cat ${main_py_path}"
           }
         }
       }
