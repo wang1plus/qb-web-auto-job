@@ -5,6 +5,7 @@ pipeline {
     stage('first') {
       steps {
         echo 'hello from github'
+        sh 'pwd'
         sh 'ls -al'
       }
     }
