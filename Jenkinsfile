@@ -7,8 +7,10 @@ pipeline {
         echo 'hello from github'
         ls -al
       }
+    }
+    staget('echo code'){
       steps {
-        cat ./src/main.py
+        cat src/main.py
       }
     }
   }
