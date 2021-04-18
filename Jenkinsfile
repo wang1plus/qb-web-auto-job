@@ -5,6 +5,10 @@ pipeline {
     stage('first') {
       steps {
         echo 'hello from github'
+        ls -al
+      }
+      steps {
+        cat ./src/main.py
       }
     }
   }
